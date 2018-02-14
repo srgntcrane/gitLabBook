@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.17)  14 FEB 2018 16:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.17)  14 FEB 2018 16:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1299,14 +1299,14 @@ Package pdftex.def Info: 87D2.pdf used on input line 51.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./85D2.pdf> <./87D2.pd
-f>] [3]
-<DFS_Layout.jpg, id=116, 2055.68pt x 1156.32pt>
+f>] [3] [4]
+<DFS_Layout.jpg, id=119, 2055.68pt x 1156.32pt>
 File: DFS_Layout.jpg Graphic file (type jpg)
  <use DFS_Layout.jpg>
-Package pdftex.def Info: DFS_Layout.jpg used on input line 96.
+Package pdftex.def Info: DFS_Layout.jpg used on input line 102.
 (pdftex.def)             Requested size: 469.75499pt x 264.23654pt.
 
-(./Dopp_Free_Spect_Report.bbl [4 <./DFS_Layout.jpg>]) [5]
+(./Dopp_Free_Spect_Report.bbl) [5 <./DFS_Layout.jpg>]
 (./Dopp_Free_Spect_Report.aux) ) 
 Here is how much of TeX's memory you used:
  11578 strings out of 493029
@@ -1334,7 +1334,7 @@ cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmcsco10.pfb>
-Output written on Dopp_Free_Spect_Report.pdf (5 pages, 667974 bytes).
+Output written on Dopp_Free_Spect_Report.pdf (5 pages, 672816 bytes).
 PDF statistics:
  169 PDF objects out of 1000 (max. 8388607)
  119 compressed objects within 2 object streams
