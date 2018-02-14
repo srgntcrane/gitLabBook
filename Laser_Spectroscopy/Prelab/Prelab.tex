@@ -1,0 +1,128 @@
+\documentclass[12pt]{article}
+%\documentstyle[12pt]{article}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{-.3in}
+\setlength{\textheight}{9in}
+\pagestyle{empty}
+
+\usepackage[super]{nth}
+\usepackage{amsmath}
+\usepackage{csquotes}
+\usepackage{physics}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}
+
+\begin{document}
+
+\begin{center}
+{\Large Laser Spectroscopy Prelab} \\[.3in]
+{\large Bj\"{o}rn Sumner} \\
+{29 Jan 2018}}
+\end{center}
+
+\section*{Prelab Questions}
+
+\subsection*{1}
+
+$s = \frac{1}{2}$, always.\\ 
+$5s^1$: $s \implies \ell = 0$ and since $j = \rvert \ell - s \rvert, \cdots, \ell + s = \frac{1}{2}$.\\
+Furthermore, $ 2s+1 = 2$, so this gives us 
+$$
+{}^{2s+1}L_j \rightarrow 5^2 S_{1/2}
+$$
+
+$5p^1$:  $p \implies \ell = 1$ and $j = \rvert 1 - \frac{1}{2} \rvert, 1+\frac{1}{2} = \frac{1}{2}, \frac{3}{2}$ 
+$$ 
+{}^{2s+1}L_j \rightarrow 5^2 P_{1/2} \text{ and } 5^2 P_{3/2}
+$$
+
+\subsection*{2}
+
+The Hamiltonian associated with spin orbit coupling is given by equation (5):
+$$
+H_{SO} = \zeta(r) \frac{\hbar^2}{2}\left[j(j+1)-\ell(\ell+1)-s(s+1)\right]
+$$
+
+For the higher energy $5^2 P_{3/2}$, $j=\frac{3}{2}, \ell=1, s = \frac{1}{2}$, and we get an associated energy:
+$$
+\begin{align*}
+H_{SO} &= \zeta(r) \frac{\hbar^2}{2} \left[\frac{3}{2}(\frac{5}{2})-1(2)-\frac{1}{2}(\frac{3}{2})\right] \\
+&= \zeta(r) \frac{\hbar^2}{2} \left[\frac{15}{4} - \frac{8}{4} - \frac{3}{4}\right] \\
+&= \zeta(r) \frac{\hbar^2}{2}
+\end{align*}
+$$
+
+
+For the lower energy $5^2 P_{3/2}$, $j=\frac{1}{2}, \ell=1, s = \frac{1}{2}$, and we get an associated energy:
+$$
+\begin{align*}
+H_{SO} &= \zeta(r) \frac{\hbar^2}{2} \left[\frac{1}{2}(\frac{3}{2})-1(2)-\frac{1}{2}(\frac{3}{2})\right] \\
+&= \zeta(r) \frac{\hbar^2}{2} \left[-2\right] \\
+&= -\zeta(r) \hbar^2
+\end{align*}
+$$
+
+To get the energy splitting, we take the difference between the two:
+
+$$
+\begin{align*}
+\Delta E &= \zeta(r) \frac{\hbar^2}{2} + \zeta(r) \hbar^2\\
+&= \zeta(r) \frac{3 \hbar^2}{2}
+\end{align*}
+$$
+
+\subsection*{3}
+
+For ${}^{87}Rb$, $I = \frac{3}{2}$, and $F = J+I$, with $F$ taking on values $F = \rvert J - I \rvert, \rvert J - I \rvert + 1, \cdots , J + I$
+
+\subsubsection*{(1)}
+
+$5^2S_{1/2} \implies j = \frac{1}{2}$ \\
+So
+$$
+\begin{align*}
+F &= \rvert \frac{1}{2} - \frac{3}{2} \rvert,\, \frac{1}{2}+\frac{3}{2}\\
+&= 1,\,2
+\end{align*}
+$$
+
+\subsubsection*{(2)}
+
+$5^2P_{1/2} \implies j = \frac{1}{2}$ \\
+So
+$$
+\begin{align*}
+F &= \rvert \frac{1}{2} - \frac{3}{2} \rvert,\, \frac{1}{2}+\frac{3}{2}\\
+&= 1,\,2
+\end{align*}
+$$
+
+
+\subsubsection*{(3)}
+
+$5^2P_{3/2} \implies j = \frac{3}{2}$ \\
+So
+$$
+\begin{align*}
+F &= \rvert \frac{3}{2} - \frac{3}{2} \rvert,\, \rvert \frac{3}{2} - \frac{3}{2} \rvert + 1,\, \rvert \frac{3}{2} - \frac{3}{2} \rvert +2 ,\, \frac{3}{2}+\frac{3}{2}\\
+&= 0,\,1,\,2,\,.3
+\end{align*}
+$$
+
+
+\subsection*{4}
+
+The presence of crossover resonances means that there are frequencies between the `standard' transition frequencies of ${}^{87}Rb$ that can absorb light.  I expect to observe 12 spectral lines in the transition from $5^2P_{3/2}$ to $5^2S_{1/2}$.
+
+\subsection*{5}
+
+For the $5^2S_{1/2}$ state of ${}^{87}Rb$, we have $I = \frac{3}{2}$, $J = \frac{1}{2}$, $F = 1 \text{ or } 2$.  However, when we plug this into equation 10:
+$$
+B \frac{\frac{3}{4}C(C+1)-I(I+1)J(J+1)}{2I(2I-1)J(2J-1)}
+$$
+We notice that the denominator results in zero, due to the value of $J$: $2\frac{1}{2}-1=0$.  Since this term is a term in the total hyperfine interaction, we cannot have it diverge, or else we would have a divergent hyperfine transition!  The only way to prevent this is if we force $B=0$, regardless of our choice in $F = 1 \text{ or } 2$.
+
+\end{document}

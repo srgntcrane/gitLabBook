@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+%\documentstyle[12pt]{article}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{-.3in}
+\setlength{\textheight}{9in}
+\pagestyle{empty}
+
+\usepackage[super]{nth}
+\usepackage{amsmath}
+\usepackage{csquotes}
+\usepackage{physics}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}
+
+\begin{document}
+
+\begin{center}
+{\Large Laser Cooling and Trapping Prelab} \\[.3in]
+{\large Bj\"{o}rn Sumner} \\
+{12 Feb 2018}
+\end{center}
+
+\section*{Prelab Questions}
+
+\subsection*{1}
+
+In the reference frame of the atom, an incoming photon carries $\vec{p}=\hbar \vec{k}=\frac{h}{\lambda}$ momentum, where $\lambda \approx 780\,nm$ is given by the trapping transition frequency.  Over many photon absorption/emission cycles, the average emitted momentum is $0$, and based on the stated $n = 10^7 \,\text{photons}/\text{sec}$, this results in a force
+\begin{align*}
+	F &= \frac{dp}{dt}\\
+	&= \frac{hn}{\lambda}\\
+	&= \frac{6.626\times10^{-34}\,\text{J}\cdot\text{s} \,\cdot 10^7 s^{-1}}{780.\times 10^{-9}\,m}\\
+	&= 8.5 \times 10^-21\,N
+\end{align*}
+
+Given the mass of an $1.443\times 10^{-25}\,kg$ \cite{steck87Rb}, we determine the atomic acceleration to be
+
+\begin{align*}
+	a &= \frac{F}{m}\\
+	&= \frac{8.5 \times 10^-21\,N}{1.443\times 10^{-25}\,kg}\\
+	&= 5.9\times 10^4 \frac{m}{s^2}\\
+	&\approx 6.0\times 10^3 g
+\end{align*}
+
+\subsection*{2}
+
+\subsubsection*{(a)}
+
+There is a small, but finite probability that an atom will transition from the $5P_{3/2}\, F=3$ to the $5S_{1/2}\, F=1$ state.  This state is not on resonance with our trapping laser, so by using the re-pumping laser, we can excite this atom back to the on-resonance $5P_{3/2}\, F=2$ state.  If we did not have this re-pumping laser, the MOT would rapidly lose atoms.  While the probability of any one transition to $5S_{1/2}\, F=1$ is small, the rapidity of transitions ($\approx 10^7/\text{sec}$) results in a large population loss.
+
+\subsubsection*{(b)}
+
+We need a re-pump to account for relatively unlikely `forbidden' transitions.  Another transition scheme would be to trap at the $5S_{1/2}\, F=1\rightarrow 5P_{3/2}\, F=2 $ transition.  The atom can then transition to the $5S_{1/2} F=1$ (preferred) or the $5S_{1/2} F=2$ (forbidden) states.  In order to compensate for these forbidden transitions, we would need to repump $5S_{1/2} F=2 \rightarrow 5P_{3/2}\, F=2$.  Note that this is basically our process, but with the repump and trapping lasers swapped.
+
+\subsection*{3}
+
+We are trying to obtain a relationship between the change in the length of the cavity and the change in the frequency.  We know the cavity must support an integer number of half wavelengths, so the ratio of the change in the length of the cavity to the length of the cavity must equal the ratio of the change in the wavelength to the wavelength.  Symbolically: $dL = \frac{L}{\lambda}d\lambda$.
+
+Furthermore, $\nu =\frac{c}{\lambda} \implies d\nu =-\frac{c}{\lambda^2}d\lambda \implies d\lambda = -\frac{\lambda^2}{c}d\nu$.
+
+Putting these together, we obtain:
+
+\begin{align*}
+	dL &= \frac{L}{\lambda}\left(-\frac{\lambda^2}{c}d\nu\right)\\
+	&=-\frac{L\lambda}{c}d\nu
+\end{align*}
+
+Plugging in the length of the cavity, the wavelength of the laser, and the desired change in frequency, we obtain
+\begin{align*}
+	dL &= -\frac{(3\times 10^{-2}\,\text{m})(780\times 10^{-9}\,\text{m})}{(3\times 10^8\, \text{m}\cdot \text{s}^{-1})}(1\,\text{MHz})\\
+	&= -7.8 \times 10^{-11}\,\text{m}
+\end{align*}
+
+\bibliographystyle{unsrt}
+\bibliography{trapbib}
+
+\end{document}
