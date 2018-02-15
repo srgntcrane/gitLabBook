@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.17)  14 FEB 2018 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.17)  14 FEB 2018 18:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1303,16 +1303,16 @@ f>] [3] [4]
 <DFS_Layout.jpg, id=119, 2055.68pt x 1156.32pt>
 File: DFS_Layout.jpg Graphic file (type jpg)
  <use DFS_Layout.jpg>
-Package pdftex.def Info: DFS_Layout.jpg used on input line 102.
+Package pdftex.def Info: DFS_Layout.jpg used on input line 133.
 (pdftex.def)             Requested size: 469.75499pt x 264.23654pt.
 
-(./Dopp_Free_Spect_Report.bbl) [5 <./DFS_Layout.jpg>]
+(./Dopp_Free_Spect_Report.bbl [5]) [6 <./DFS_Layout.jpg>]
 (./Dopp_Free_Spect_Report.aux) ) 
 Here is how much of TeX's memory you used:
- 11578 strings out of 493029
- 208450 string characters out of 6136233
- 260809 words of memory out of 5000000
- 15028 multiletter control sequences out of 15000+600000
+ 11582 strings out of 493029
+ 208494 string characters out of 6136233
+ 259833 words of memory out of 5000000
+ 15032 multiletter control sequences out of 15000+600000
  14588 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,14n,49p,10441b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1334,10 +1334,10 @@ cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmcsco10.pfb>
-Output written on Dopp_Free_Spect_Report.pdf (5 pages, 672816 bytes).
+Output written on Dopp_Free_Spect_Report.pdf (6 pages, 676557 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
+ 172 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
