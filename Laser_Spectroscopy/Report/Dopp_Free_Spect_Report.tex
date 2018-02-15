@@ -61,30 +61,90 @@ By using the Hamiltonian of equation \ref{eq:hamiltonian} in we can obtain the e
 where
 $$C = F(F+1) - J(J+1) - I(I+1)$$
 
-By taking the differences between these frequencies, we can obtain a prediction for the splittings between various hyperfine levels, which can then be used to predict the crossover levels.
+By using these formulas, we can obtain expressions in the unknown coefficients $A$ and $B$ for the `absolute' frequencies, and average these levels to get the crossover `absolute' frequencies.  Once we have these six levels, we can take the differences to obtain expressions for the splittings.  We can then use the results from our experiment to obtain values for $A$ and $B$ and compare them to the accepted values.
 
 \subsubsection*{${}^{85}\text{Rb}\,5^2\text{P}_{3/2}\,\text{Frequencies}$}
 
-\paragraph{$F' = 4\, J = \frac{3}{2}\, I = \frac{5}{2}$}
+\paragraph{$F' = 4, J = \frac{3}{2}, I = \frac{5}{2}$}
 \begin{align*}
 C &= \frac{15}{2}\qquad
-&\nu_{\frac{3}{2},4} = \nu_J + A \frac{15}{4} + B\frac{1}{4}= \nu_J +  \frac{75A+5B}{20}
+&\nu_{\frac{3}{2},4} = \nu_J + A \frac{15}{4} + B\frac{1}{4}= \nu_J +  \frac{150A+10B}{40}
 \end{align*}
 
-\paragraph{$F' = 3\, J = \frac{3}{2}\, I = \frac{5}{2}$}
+\paragraph{$F' = 3, J = \frac{3}{2}, I = \frac{5}{2}$}
 \begin{align*}
 	C &= -\frac{1}{2}\qquad
-	&\nu_{\frac{3}{2},3} = \nu_J - A \frac{1}{4} - B\frac{11}{20}= \nu_J - \frac{5A+11B}{20}
+	&\nu_{\frac{3}{2},3} = \nu_J - A \frac{1}{4} - B\frac{11}{20}= \nu_J - \frac{10A+22B}{40}
 \end{align*}
 
-\paragraph{$F' = 2\, J = \frac{3}{2}\, I = \frac{5}{2}$}
+\paragraph{$F' = 2, J = \frac{3}{2}, I = \frac{5}{2}$}
 \begin{align*}
 	C &= -\frac{13}{2}\qquad
-	&\nu_{\frac{3}{2},3} = \nu_J - A \frac{13}{4} - B\frac{1}{10} = \nu_J - \frac{65A+2B}{20}
+	&\nu_{\frac{3}{2},2} = \nu_J - A \frac{13}{4} - B\frac{1}{10} = \nu_J - \frac{130A+4B}{40}
 \end{align*}
 
-We thus predict the following splittings:
-\paragraph{$F' = 2 \rightarrow 3$}
+\paragraph{Crossovers}
+\begin{align*}
+	\nu_{\bar{43}} &= \nu_J + \frac{\nu_{\frac{3}{2},4} + \nu_{\frac{3}{2},3}}{2} = \nu_J + \frac{70A-6B}{40}
+\end{align*}
+
+\begin{align*}
+\nu_{\bar{42}} &= \nu_J + \frac{\nu_{\frac{3}{2},4} + \nu_{\frac{3}{2},2}}{2} = \nu_J + \frac{10A+3B}{40}
+\end{align*}
+
+\begin{align*}
+\nu_{\bar{32}} &= \nu_J + \frac{\nu_{\frac{3}{2},3} + \nu_{\frac{3}{2},2}}{2} = \nu_J - \frac{70A+13B}{40}
+\end{align*}
+
+We thus obtain the following splittings:
+\paragraph{Splittings}
+\begin{align*}
+	\nu_{4}-\nu_{\bar{43}} &= 2A+\frac{2}{5}B\qquad & \nu_{\bar{43}}-\nu_{\bar{42}}= \frac{3}{2}A-\frac{9}{40}B\\
+	\nu_{\bar{42}}-\nu_{3} &= \frac{1}{2}A+\frac{5}{8}B\qquad & \nu_{3}-\nu_{\bar{32}}= \frac{3}{2}A-\frac{9}{40}B\\
+	\nu_{\bar{32}}-\nu_2 &= \frac{3}{2}A-\frac{9}{40}B
+\end{align*}
+
+
+\subsubsection*{${}^{87}\text{Rb}\,5^2\text{P}_{3/2}\,\text{Frequencies}$}
+
+\paragraph{$F' = 3, J = \frac{3}{2}, I = \frac{3}{2}$}
+\begin{align*}
+C &= \frac{9}{2}\qquad
+&\nu_{\frac{3}{2},3} = \nu_J + A \frac{9}{4} + B\frac{1}{4}= \nu_J +  \frac{90A+10B}{40}
+\end{align*}
+
+\paragraph{$F' = 2, J = \frac{3}{2}, I = \frac{3}{2}$}
+\begin{align*}
+C &= -\frac{3}{2}\qquad
+&\nu_{\frac{3}{2},2} = \nu_J - A \frac{3}{4} - B\frac{3}{4}= \nu_J - \frac{30A+30B}{40}
+\end{align*}
+
+\paragraph{$F' = 1, J = \frac{3}{2}, I = \frac{3}{2}$}
+\begin{align*}
+C &= -\frac{11}{2}\qquad
+&\nu_{\frac{3}{2},1} = \nu_J - A \frac{11}{4} + B\frac{1}{4} = \nu_J - \frac{110A-10B}{40}
+\end{align*}
+
+\paragraph{Crossovers}
+\begin{align*}
+\nu_{\bar{32}} &= \nu_J + \frac{\nu_{\frac{3}{2},3} + \nu_{\frac{3}{2},2}}{2} = \nu_J + \frac{30A-10B}{40}
+\end{align*}
+
+\begin{align*}
+\nu_{\bar{31}} &= \nu_J + \frac{\nu_{\frac{3}{2},3} + \nu_{\frac{3}{2},1}}{2} = \nu_J - \frac{10A-10B}{40}
+\end{align*}
+
+\begin{align*}
+\nu_{\bar{21}} &= \nu_J + \frac{\nu_{\frac{3}{2},2} + \nu_{\frac{3}{2},1}}{2} = \nu_J - \frac{70A+10B}{40}
+\end{align*}
+
+We thus obtain the following splittings:
+\paragraph{Splittings}
+\begin{align*}
+\nu_{3}-\nu_{\bar{32}} &= \frac{3}{2}A+\frac{1}{2}B\qquad & \nu_{\bar{32}}-\nu_{\bar{31}}= A-\frac{1}{2}B\\
+\nu_{\bar{31}}-\nu_{2} &= \frac{1}{2}A+B\qquad & \nu_{2}-\nu_{\bar{21}}= A-\frac{1}{2}B\\
+\nu_{\bar{21}}-\nu_1 &= A-\frac{1}{2}B
+\end{align*}
 
 \subsection*{Doppler Broadening}
 
@@ -115,27 +175,70 @@ We can use this to predict the expected half width of the D2 lines.  Using figur
 
 These broadened spectra mask the hyperfine structure of the atoms, and so we must use Doppler-Free Saturated Absorption Spectroscopy to tease out these individual spectra.
 
+\subsection*{Doppler-Free Saturated Absorption Spectroscopy}
 
+To isolate the hyperfine structure, we use saturation absorption spectroscopy.  When a probe beam passes through the rubidium sample, thermal motion of the atoms will result in absorption of this beam across a range of frequencies, as these frequencies will be blue-shifted or red-shifted to the atomic resonance owing to the motion of the atoms relative to the probe source.  However, if we were to use a strong pump beam to saturate the absorption across the entire frequency range, then both beams will be on resonance at the transition frequency for a subpopulation of the atoms that have velocities perpendicular to the propagation direction of the lasers.  These atoms can then undergo \textit{stimulated} emission from the probe beam, and thus the absorption will be reduced (the photodetector will register a stronger signal) at the transition frequency.  By using an additional probe beam separate from the overlap, we can subtract the signals to obtain the Doppler-free saturated absorption signal.
+
+As an added bonus, this strong pump beam also favors the higher ground state in both isotopes ($F=3$ for ${}^{85}\text{Rb}$, $F = 2$ for ${}^{87}\text{Rb}$), which promotes the D$_2$ line we are interested in observing.
+
+\subsection*{Michelson Interferometer}
+
+Though we can obtain a plot of voltage against time, we must have a way of comparing the time differences in the signals to an associated frequency.  We can use a Michelson interferometer to calibrate our signal.  By precisely measuring the different leg lengths of the interferometer, then a time-varying frequency of light entering the interferometer will produce a time-varying intensity of its recombined beams.  It can be shown that the frequency spacing of the interference maxima is given by
+
+\begin{align}
+	\Delta \nu &= \frac{c}{2 \Delta L}\label{eq:interferometer}
+\end{align}
+
+Thus, by using the period of the interferometer signal which is associated with a frequency span, we have a way of measuring the frequency spacings of interest from the spectroscopy signals.
 
 \section*{Experiment and Data}
 
 \subsection*{Experimental Setup}
-We designed the experimental setup on the optical table to accommodate both portions of the lab in tandem, the Doppler-Free Saturated Absorption Spectroscopy and the Michelson Interferometer. The tedious process of finding and aligning the 780 nm external cavity diode laser took a long while. Using the Infrared-Viewing camera and the handheld cardviewer allowed us to trace the paths of Laser beam. The Laser beam was directed through a cube beam-splitter with the straight path continuing towards the Michelson Interferometer setup, and the perpendicular spit path towards a thick beam splitter. The thickness of the beam spitter allows for a precisely spaced set of parallel beams directly through the Rubidium vapor sample. These two weak beams are called the reference probe beam and the overlapping probe beam. The main portion of the laser continued straight through the thick beam splitter, becoming the start of the pump beam. The strong pump beam was angled with a mirror towards the opposite end of the table and was then angled with a separate mirror to align an overlap of the pump and the overlapping probe beam. These two beams are propagating in opposite directions. The overlapping probe beam continues through the rubidium vapor sample and is then directed with a mirror onto the photodetector. The reference probe beam is also reflected from a mirror through an optical attenuator and onto a separate photodetector. To achieve comparable power from the two probe beams we used a translation stage holding the variable attenuator to reduce the intensity of the reference beam. This was done visually with the aid of the oscilloscope  displaying the two channels of the photodetectors. 
+We designed the experimental setup on the optical table to accommodate both Doppler-Free Saturated Absorption Spectroscopy and the Michelson Interferometer for calibration.  Using the infrared camera and the handheld cardviewer allowed us to trace the paths of laser beam. The laser was directed through a cube beam splitter with one path continuing towards the Michelson Interferometer setup, and the other towards a thick beam splitter. The thickness of the beam splitter allows for spatially separated but parallel beams directly through the Rubidium vapor sample. These two weak beams are called the reference probe beam and the overlapping probe beam. The main portion of the laser continued straight through the thick beam splitter, becoming the start of the pump beam. The strong pump beam was angled with a mirror towards the opposite end of the table and was then angled with a separate mirror to overlap a probe beam. These two beams are propagating in opposite directions. The overlapping probe beam continues through the rubidium vapor sample and is then directed with a mirror onto the photodetector. The reference probe beam is also reflected from a mirror through an optical attenuator and onto a separate photodetector. To achieve comparable power from the two probe beams we used a translation stage holding the variable attenuator to reduce the intensity of the reference beam. This was done visually with the aid of the oscilloscope  displaying the two channels of the photodetectors. 
 
-The initial straight beam passing through the cube-splitter, which was incorporated into the Michelson Interferometer, this was accomplished by placing a thin microscope slide at ~45$^{\circ}$ to act as a 50-50 beam splitter. The longer reflected leg of the Michelson Interferometer was measured at a distance of 388.5 $\pm $0.5 mm, while the shorter straight leg was measured at a distance of 94.5 $\pm $0.5mm. The laser traveled down and back each leg of the Michelson Interferometer and recombined at the beamsplitter and travelled parallel all the way to the photodetector and remained parallel all the way to the opposite wall. We experienced a lot of difficulty aligning the two beam to recombine at the third photodetector. After orienting the mirrors, beamsplitter and photodetector we noticed an odd feedback signal occurring on our oscilloscope. After discussing the feedback with Professor Jun Ye we were able to deduce the feedback was a result of setting the Michelson Interferometer and the doppler-free spectroscopy in tandem with each other. The reflections back through the beam splitter and back into the cube-splitter were resulting in feedback noise. To negate these effects we installed another variable optical attenuator at an angle, between the cube splitter and microscope slide, to reduce the intensity and angle the reflection away. After its installation the signals cleared up and revealed 6 distinct peaks of the saturated absorption spectrum. Using the Math function of the oscilloscope we were able to subtract the Doppler-broadened spectral lines with hyperfine structure (overlapping probe) from the Doppler-broadened spectral lines (reference probe) we were able to display just the specific peaks of the hyperfine structure. 
+The beam passing through the first beam splitter is incorporated into the Michelson Interferometer.  This interferometer consists of a thin microscope slide at $\approx45^{\circ}$ to act as a 50-50 beam splitter. The longer reflected leg of the Michelson Interferometer has a measured length of 388.5 $\pm $0.5 mm, while the shorter leg is measured to have a length of 94.5 $\pm $0.5mm. The laser traveled down and back each leg of the Michelson Interferometer and recombined at the beam splitter before continuing to the photodetector.  We ensured the beams were parallel and occupying the same space by using a card to ensure there was no divergence from the recombination point to the far wall approximately 3 meters away. After orienting the mirrors, beam splitters and photodetectors we noticed an odd feedback signal superimposed on both probe signals on our oscilloscope. After discussing the feedback with Professor Jun Ye, we were able to determine the feedback was a result of the interferometer beams entering into the spectroscopy component of the table. To negate these effects we installed another variable optical attenuator at an angle between the cube splitter and microscope slide to prevent the interferometer signal from entering the spectroscopy setup.  This eliminated the anomalous addition from the probe beam signals.  Using the Math function of the oscilloscope we were able to subtract the Doppler-broadened spectral lines with hyperfine structure (overlapping probe) from the Doppler-broadened spectral lines (reference probe) we were able to display just the specific peaks of the hyperfine structure. See figure \ref{fig:Layout} for a picture of our optical table.
 
-Toggling the Vortex Laser controls for the voltage and the wave-function generator?s frequency and peak-to-peak voltage allowed for panning left and right and zooming in and out on specific portions, focusing on the hyperfine splitting of the 5$^2P_{3/2} $ state.  We decided to arrange the output from the Michelson Interferometer to be displayed along side the three other signals, allowing for a direct comparison. Channel one was displaying Doppler-broadened spectral lines with hyperfine structure, channel two was displaying the Doppler-broadened spectral lines, Channel three was the fringes of the Michelson interferometer, while channel four was the trigger signal from the wave-function generator. By incorporating all of the signals, onto the same oscilloscope we were able to directly overlay all of the information on comparable scales and then measure the fullwidth at half max  of the doppler broaden-lines of Rb$^{87} $ as well as the separation of the hyperfine lines for the 
-F=2 to F' transition. We then were able to solve for the constants A and B of the 5$^2 P_{3/2}$
-
-
-\begin{figure}%
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{DFS_Layout.jpg}
 	\caption{Experiment Layout}%
 	\label{fig:Layout}%
 \end{figure}
 
+Toggling the Vortex Laser controls for the voltage and the wave-function generator's frequency and peak-to-peak ramp voltage allowed for panning left and right and zooming in and out on specific portions, focusing on the hyperfine splitting of the 5$^2P_{3/2} $ states.  We decided to arrange the output from the Michelson Interferometer to be displayed along side the three other signals, allowing for a direct comparison. These signals included the reference probe beam, the pump-overlapped probe beam, the interferometer signal and the ramp voltage signal upon which the oscilloscope is triggered.  By incorporating all of the signals onto the same oscilloscope we were able to directly compare all signals.
+
+This allowed us to measure the full width at half maximum (FWHM) of the doppler broadened lines of both isotopes as well as the separation of the hyperfine states for the D$_2$ lines of both isotopes. We then were able to solve for the constants A and B of the 5$^2 P_{3/2}$.
+
+A critical feature of our setup was the careful alignment of the pump beam.  By ensuring the maximum overlap of the pump beam with one of the probe beams, we maximized the population in the higher ground states as well as the population of atoms interacting simultaneously with both pump and probe beams.  This optimizes the amount of stimulated hyperfine transitions that occur, making our signals much clearer.
+
 \subsection*{Results}
+
+Two representative sets of data for the D$_2$ transitions for both ${}^{85}\text{Rb}$ and ${}^{87}\text{Rb}$ are shown in figure \ref{fig:RbOsc}.
+
+\begin{figure}%
+	\centering
+	\subfloat[${}^{85}\text{Rb}$]{{\includegraphics[width=8cm]{../Screenshots/85RbReport.png} }}%
+	\,
+	\subfloat[${}^{87}\text{Rb}$]{{\includegraphics[width=8cm]{../Screenshots/87RbReport.png} }}%
+	\caption{Rubidium D$_2$ Oscilloscope Data}%
+	\label{fig:RbOsc}%
+\end{figure}
+
+As can be seen from figure \ref{fig:RbOsc}, we were able to isolate 4 of the 6 D$_2$ hyperfine transitions (3 transitions, 3 crossovers) for ${}^{85}\text{Rb}$, but all 6 D$_2$ transitions for ${}^{87}\text{Rb}$.
+
+We first obtain our `meterstick' for measuring frequency spacings.  To do this, we curve fit the interferometer signal to a cosine, and obtain a fitted period, $\delta t$.  We then compare spacings relative to this `meterstick' by observing that the ratio of the frequency spacing we desire, $f$ to the interferometer frequency spacing $\Delta \nu$ must equal the ratio of the time-spacing between the signals of interest $\tau$ to the time spacing of the interferometer period $\Delta t$:
+$$ \frac{f}{\Delta \nu}= \frac{\tau}{\Delta t}$$
+By using equation \ref{eq:interferometer}, we obtain:
+\begin{align}
+	f &= \frac{c}{2\Delta L \Delta t}\tau \label{eq:meterstick}
+\end{align}
+
+By performing the curve fitting mentioned above, we find 
+
+We would like to measure the FWHM of the Doppler broadened D$_2$ transition.  We do this by fitting the Doppler broadened probe signals to Gaussians, and then using the relation $FWHM = 2 \sqrt{2 \ln(2)}\sigma$, where $\sigma$ is the standard deviation of the fitted Gaussian.
+
+
+
 
 \subsection*{Error Analysis}
 
