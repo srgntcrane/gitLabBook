@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.17)  14 FEB 2018 22:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.17)  15 FEB 2018 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1201,18 +1201,18 @@ Package csquotes Info: ... none found.
 (./Dopp_Free_Spect_Report.aux)
 \openout1 = `Dopp_Free_Spect_Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1285,7 +1285,7 @@ ersion <1.7>, but at most version <1.5> allowed
 <85D2.pdf, id=1, 614.295pt x 794.97pt>
 File: 85D2.pdf Graphic file (type pdf)
  <use 85D2.pdf>
-Package pdftex.def Info: 85D2.pdf used on input line 49.
+Package pdftex.def Info: 85D2.pdf used on input line 51.
 (pdftex.def)             Requested size: 227.62204pt x 294.57098pt.
 
 
@@ -1294,7 +1294,7 @@ ersion <1.7>, but at most version <1.5> allowed
 <87D2.pdf, id=2, 614.295pt x 794.97pt>
 File: 87D2.pdf Graphic file (type pdf)
  <use 87D2.pdf>
-Package pdftex.def Info: 87D2.pdf used on input line 51.
+Package pdftex.def Info: 87D2.pdf used on input line 53.
 (pdftex.def)             Requested size: 227.62204pt x 294.57098pt.
  [1
 
@@ -1303,34 +1303,195 @@ f>] [3] [4] [5]
 [6] <DFS_Layout.jpg, id=126, 2055.68pt x 1156.32pt>
 File: DFS_Layout.jpg Graphic file (type jpg)
  <use DFS_Layout.jpg>
-Package pdftex.def Info: DFS_Layout.jpg used on input line 203.
+Package pdftex.def Info: DFS_Layout.jpg used on input line 207.
 (pdftex.def)             Requested size: 469.75499pt x 264.23654pt.
 
-[7 <./DFS_Layout.jpg>]
-<../Screenshots/85RbReport.png, id=131, 914.41624pt x 910.40125pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7] <../Screenshots/85RbReport.png, id=131, 914.41624pt x 910.40125pt>
 File: ../Screenshots/85RbReport.png Graphic file (type png)
 
 <use ../Screenshots/85RbReport.png>
-Package pdftex.def Info: ../Screenshots/85RbReport.png used on input line 220.
+Package pdftex.def Info: ../Screenshots/85RbReport.png used on input line 224.
 (pdftex.def)             Requested size: 227.62204pt x 226.61345pt.
 
 <../Screenshots/87RbReport.png, id=133, 907.39pt x 910.40125pt>
 File: ../Screenshots/87RbReport.png Graphic file (type png)
 
 <use ../Screenshots/87RbReport.png>
-Package pdftex.def Info: ../Screenshots/87RbReport.png used on input line 222.
+Package pdftex.def Info: ../Screenshots/87RbReport.png used on input line 226.
 (pdftex.def)             Requested size: 227.62204pt x 228.37767pt.
- [8 <../Screenshots/85RbReport.png> <../Screenshots/87RbReport.png>] (./Dopp_Fr
-ee_Spect_Report.bbl) [9]
+
+<../Screenshots/85Rb_fringe.png, id=134, 895.345pt x 895.345pt>
+File: ../Screenshots/85Rb_fringe.png Graphic file (type png)
+
+<use ../Screenshots/85Rb_fringe.png>
+Package pdftex.def Info: ../Screenshots/85Rb_fringe.png used on input line 242.
+
+(pdftex.def)             Requested size: 227.62204pt x 227.62003pt.
+
+<../Screenshots/87Rb_fringe.png, id=135, 889.3225pt x 895.345pt>
+File: ../Screenshots/87Rb_fringe.png Graphic file (type png)
+
+<use ../Screenshots/87Rb_fringe.png>
+Package pdftex.def Info: ../Screenshots/87Rb_fringe.png used on input line 244.
+
+(pdftex.def)             Requested size: 227.62204pt x 229.16382pt.
+ [8 <./DFS_Layout.jpg>] [9 <../Screenshots/85RbReport.png> <../Screenshots/87Rb
+Report.png> <../Screenshots/85Rb_fringe.png> <../Screenshots/87Rb_fringe.png>]
+<../Screenshots/85RbFWHM.png, id=146, 892.33376pt x 895.345pt>
+File: ../Screenshots/85RbFWHM.png Graphic file (type png)
+
+<use ../Screenshots/85RbFWHM.png>
+Package pdftex.def Info: ../Screenshots/85RbFWHM.png used on input line 257.
+(pdftex.def)             Requested size: 227.62204pt x 228.38509pt.
+
+<../Screenshots/87RbFWHM.png, id=147, 886.31125pt x 895.345pt>
+File: ../Screenshots/87RbFWHM.png Graphic file (type png)
+
+<use ../Screenshots/87RbFWHM.png>
+Package pdftex.def Info: ../Screenshots/87RbFWHM.png used on input line 259.
+(pdftex.def)             Requested size: 227.62204pt x 229.94254pt.
+ [10 <../Screenshots/85RbFWHM.png> <../Screenshots/87RbFWHM.png>]
+<../Screenshots/85Rb_allpeaks.png, id=153, 896.34875pt x 895.345pt>
+File: ../Screenshots/85Rb_allpeaks.png Graphic file (type png)
+
+<use ../Screenshots/85Rb_allpeaks.png>
+Package pdftex.def Info: ../Screenshots/85Rb_allpeaks.png used on input line 27
+2.
+(pdftex.def)             Requested size: 227.62204pt x 227.36046pt.
+
+<../Screenshots/87Rb_allpeaks.png, id=154, 889.3225pt x 895.345pt>
+File: ../Screenshots/87Rb_allpeaks.png Graphic file (type png)
+
+<use ../Screenshots/87Rb_allpeaks.png>
+Package pdftex.def Info: ../Screenshots/87Rb_allpeaks.png used on input line 27
+4.
+(pdftex.def)             Requested size: 227.62204pt x 229.16382pt.
+ [11 <../Screenshots/85Rb_allpeaks.png> <../Screenshots/87Rb_allpeaks.png>]
+<../Screenshots/85Rb_peak1.png, id=160, 883.3pt x 895.345pt>
+File: ../Screenshots/85Rb_peak1.png Graphic file (type png)
+
+<use ../Screenshots/85Rb_peak1.png>
+Package pdftex.def Info: ../Screenshots/85Rb_peak1.png used on input line 327.
+(pdftex.def)             Requested size: 227.62204pt x 230.72127pt.
+
+<../Screenshots/85Rb_peak2.png, id=161, 875.27pt x 895.345pt>
+File: ../Screenshots/85Rb_peak2.png Graphic file (type png)
+
+<use ../Screenshots/85Rb_peak2.png>
+Package pdftex.def Info: ../Screenshots/85Rb_peak2.png used on input line 330.
+(pdftex.def)             Requested size: 227.62204pt x 232.83885pt.
+
+<../Screenshots/85Rb_peak3.png, id=162, 883.3pt x 895.345pt>
+File: ../Screenshots/85Rb_peak3.png Graphic file (type png)
+
+<use ../Screenshots/85Rb_peak3.png>
+Package pdftex.def Info: ../Screenshots/85Rb_peak3.png used on input line 333.
+(pdftex.def)             Requested size: 227.62204pt x 230.72127pt.
+
+<../Screenshots/85Rb_peak4.png, id=163, 888.31876pt x 895.345pt>
+File: ../Screenshots/85Rb_peak4.png Graphic file (type png)
+
+<use ../Screenshots/85Rb_peak4.png>
+Package pdftex.def Info: ../Screenshots/85Rb_peak4.png used on input line 336.
+(pdftex.def)             Requested size: 227.62204pt x 229.42339pt.
+
+<../Screenshots/87Rb_peak1.png, id=164, 898.35625pt x 895.345pt>
+File: ../Screenshots/87Rb_peak1.png Graphic file (type png)
+
+<use ../Screenshots/87Rb_peak1.png>
+Package pdftex.def Info: ../Screenshots/87Rb_peak1.png used on input line 350.
+(pdftex.def)             Requested size: 170.71652pt x 170.14464pt.
+
+<../Screenshots/87Rb_peak2.png, id=165, 898.35625pt x 895.345pt>
+File: ../Screenshots/87Rb_peak2.png Graphic file (type png)
+
+<use ../Screenshots/87Rb_peak2.png>
+Package pdftex.def Info: ../Screenshots/87Rb_peak2.png used on input line 353.
+(pdftex.def)             Requested size: 170.71652pt x 170.14464pt.
+
+<../Screenshots/87Rb_peak3.png, id=166, 890.32625pt x 895.345pt>
+File: ../Screenshots/87Rb_peak3.png Graphic file (type png)
+
+<use ../Screenshots/87Rb_peak3.png>
+Package pdftex.def Info: ../Screenshots/87Rb_peak3.png used on input line 356.
+(pdftex.def)             Requested size: 170.71652pt x 171.67476pt.
+
+<../Screenshots/87Rb_peak4.png, id=167, 887.315pt x 895.345pt>
+File: ../Screenshots/87Rb_peak4.png Graphic file (type png)
+
+<use ../Screenshots/87Rb_peak4.png>
+Package pdftex.def Info: ../Screenshots/87Rb_peak4.png used on input line 359.
+(pdftex.def)             Requested size: 170.71652pt x 172.24857pt.
+
+<../Screenshots/87Rb_peak5.png, id=168, 875.27pt x 895.345pt>
+File: ../Screenshots/87Rb_peak5.png Graphic file (type png)
+
+<use ../Screenshots/87Rb_peak5.png>
+Package pdftex.def Info: ../Screenshots/87Rb_peak5.png used on input line 362.
+(pdftex.def)             Requested size: 170.71652pt x 174.62572pt.
+
+<../Screenshots/87Rb_peak6.png, id=169, 885.3075pt x 895.345pt>
+File: ../Screenshots/87Rb_peak6.png Graphic file (type png)
+
+<use ../Screenshots/87Rb_peak6.png>
+Package pdftex.def Info: ../Screenshots/87Rb_peak6.png used on input line 365.
+(pdftex.def)             Requested size: 170.71652pt x 172.64476pt.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.379 		\textbf{Parameter} & {}^
+                                {85}\textbf{ Rb Expected (MHz)} & {}^{85}\te...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.379 ...r} & {}^{85}\textbf{ Rb Expected (MHz)} &
+                                                   {}^{85}\textbf{ Rb Measur...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.391 		\textbf{Parameter} & {}^
+                                {87}\textbf{ Rb Expected (MHz)} & {}^{87}\te...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.391 ...r} & {}^{87}\textbf{ Rb Expected (MHz)} &
+                                                   {}^{87}\textbf{ Rb Measur...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+(./Dopp_Free_Spect_Report.bbl [12] [13 <../Screenshots/85Rb_peak1.png> <../Scre
+enshots/85Rb_peak2.png> <../Screenshots/85Rb_peak3.png> <../Screenshots/85Rb_pe
+ak4.png>]) [14] [15 <../Screenshots/87Rb_peak1.png> <../Screenshots/87Rb_peak2.
+png> <../Screenshots/87Rb_peak3.png> <../Screenshots/87Rb_peak4.png> <../Screen
+shots/87Rb_peak5.png> <../Screenshots/87Rb_peak6.png>]
 (./Dopp_Free_Spect_Report.aux) ) 
 Here is how much of TeX's memory you used:
- 11597 strings out of 493029
- 208856 string characters out of 6136233
- 263857 words of memory out of 5000000
- 15043 multiletter control sequences out of 15000+600000
+ 11686 strings out of 493029
+ 211398 string characters out of 6136233
+ 263939 words of memory out of 5000000
+ 15116 multiletter control sequences out of 15000+600000
  14588 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,14n,49p,10441b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,14n,49p,10441b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmbxsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
@@ -1349,10 +1510,10 @@ cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmcsco10.pfb>
-Output written on Dopp_Free_Spect_Report.pdf (9 pages, 917356 bytes).
+Output written on Dopp_Free_Spect_Report.pdf (15 pages, 2011613 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
+ 239 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

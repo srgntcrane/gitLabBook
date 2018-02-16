@@ -16,6 +16,8 @@
 \usepackage{bm}
 \usepackage{subfig}
 
+\newcolumntype{L}{>{$}l<{$}}
+
 \begin{document}
 
 \begin{center}
@@ -98,11 +100,11 @@ C &= \frac{15}{2}\qquad
 
 We thus obtain the following splittings:
 \paragraph{Splittings}
-\begin{align*}
-	\nu_{4}-\nu_{\bar{43}} &= 2A+\frac{2}{5}B\qquad & \nu_{\bar{43}}-\nu_{\bar{42}}= \frac{3}{2}A-\frac{9}{40}B\\
-	\nu_{\bar{42}}-\nu_{3} &= \frac{1}{2}A+\frac{5}{8}B\qquad & \nu_{3}-\nu_{\bar{32}}= \frac{3}{2}A-\frac{9}{40}B\\
-	\nu_{\bar{32}}-\nu_2 &= \frac{3}{2}A-\frac{9}{40}B
-\end{align*}
+\begin{align}
+	\nu_{4}-\nu_{\bar{43}} &= 2A+\frac{2}{5}B\qquad & \nu_{\bar{43}}-\nu_{\bar{42}}= \frac{3}{2}A-\frac{9}{40}B\nonumber\\
+	\nu_{\bar{42}}-\nu_{3} &= \frac{1}{2}A+\frac{5}{8}B\qquad & \nu_{3}-\nu_{\bar{32}}= \frac{3}{2}A-\frac{9}{40}B\label{eq:85splittings}\\
+	\nu_{\bar{32}}-\nu_2 &= \frac{3}{2}A-\frac{9}{40}B\nonumber
+\end{align}
 
 
 \subsubsection*{${}^{87}\text{Rb}\,5^2\text{P}_{3/2}\,\text{Frequencies}$}
@@ -140,15 +142,15 @@ C &= -\frac{11}{2}\qquad
 
 We thus obtain the following splittings:
 \paragraph{Splittings}
-\begin{align*}
-\nu_{3}-\nu_{\bar{32}} &= \frac{3}{2}A+\frac{1}{2}B\qquad & \nu_{\bar{32}}-\nu_{\bar{31}}= A-\frac{1}{2}B\\
-\nu_{\bar{31}}-\nu_{2} &= \frac{1}{2}A+B\qquad & \nu_{2}-\nu_{\bar{21}}= A-\frac{1}{2}B\\
-\nu_{\bar{21}}-\nu_1 &= A-\frac{1}{2}B
-\end{align*}
+\begin{align}
+\nu_{3}-\nu_{\bar{32}} &= \frac{3}{2}A+\frac{1}{2}B\qquad & \nu_{\bar{32}}-\nu_{\bar{31}}= A-\frac{1}{2}B\nonumber\\
+\nu_{\bar{31}}-\nu_{2} &= \frac{1}{2}A+B\qquad & \nu_{2}-\nu_{\bar{21}}= A-\frac{1}{2}B \label{eq:87splittings}\\
+\nu_{\bar{21}}-\nu_1 &= A-\frac{1}{2}B\nonumber
+\end{align}
 
 \subsection*{Doppler Broadening}
 
-The spectra given in the previous section are obtained from a description of nature in the atom's frame of reference with no external effects.  However, real Rubidium atoms are subject to thermal motion, and as such these spectral lines will undergo broadening owing to the motion of the atoms relative to the laser.  Atoms moving toward the laser will `see' radiation blueshifted, and so absorption will only occur if the incoming photons are of a lower frequency than predicted by the spectra in figure \ref{fig:RbEnergy}.  Similarly, atoms moving away from the laser will absorb photons of higher frequency.  Because the velocity of these atoms follows the Maxwell distribution, it can be expected that the spectral lines will similarly follow such a distribution.  It can be shown that the half width of these distributions is given by 
+The spectra given in the previous section are obtained from a description of nature in the atom's frame of reference with no external effects.  However, real Rubidium atoms are subject to thermal motion, and as such these spectral lines will undergo broadening owing to the motion of the atoms relative to the laser.  Atoms moving toward the laser will `see' radiation blue shifted, and so absorption will only occur if the incoming photons are of a lower frequency than predicted by the spectra in figure \ref{fig:RbEnergy}.  Similarly, atoms moving away from the laser will absorb photons of higher frequency.  Because the velocity of these atoms follows the Maxwell distribution, it can be expected that the spectral lines will similarly follow such a distribution.  It can be shown that the half width of these distributions is given by 
 \begin{align}
 	\Delta \nu_{1/2} &= 2\frac{\nu_0}{c}\sqrt{\frac{2kT}{M}\ln(2)}
 \end{align}
@@ -181,6 +183,8 @@ To isolate the hyperfine structure, we use saturation absorption spectroscopy.  
 
 As an added bonus, this strong pump beam also favors the higher ground state in both isotopes ($F=3$ for ${}^{85}\text{Rb}$, $F = 2$ for ${}^{87}\text{Rb}$), which promotes the D$_2$ line we are interested in observing.
 
+An additional feature of this form of spectroscopy are the presence of `crossover peaks'.  These peaks arise from the pump beam depopulating the ground state on atoms on resonance with the pump's red- or blue-shifted light.  However, at the crossover frequencies, these atoms are on a different resonance with the probe beam's blue- or red-shifted light.  This means that the probe beam will not be absorbed by these atoms, since they are already excited by the pump beam.  Since this effect happens for atoms with opposite velocities, this effect occurs for a larger part of the atomic population, and so we expect these crossover peaks to be stronger than those of the actual hyperfine levels.
+
 \subsection*{Michelson Interferometer}
 
 Though we can obtain a plot of voltage against time, we must have a way of comparing the time differences in the signals to an associated frequency.  We can use a Michelson interferometer to calibrate our signal.  By precisely measuring the different leg lengths of the interferometer, then a time-varying frequency of light entering the interferometer will produce a time-varying intensity of its recombined beams.  It can be shown that the frequency spacing of the interference maxima is given by
@@ -194,7 +198,7 @@ Thus, by using the period of the interferometer signal which is associated with 
 \section*{Experiment and Data}
 
 \subsection*{Experimental Setup}
-We designed the experimental setup on the optical table to accommodate both Doppler-Free Saturated Absorption Spectroscopy and the Michelson Interferometer for calibration.  Using the infrared camera and the handheld cardviewer allowed us to trace the paths of laser beam. The laser was directed through a cube beam splitter with one path continuing towards the Michelson Interferometer setup, and the other towards a thick beam splitter. The thickness of the beam splitter allows for spatially separated but parallel beams directly through the Rubidium vapor sample. These two weak beams are called the reference probe beam and the overlapping probe beam. The main portion of the laser continued straight through the thick beam splitter, becoming the start of the pump beam. The strong pump beam was angled with a mirror towards the opposite end of the table and was then angled with a separate mirror to overlap a probe beam. These two beams are propagating in opposite directions. The overlapping probe beam continues through the rubidium vapor sample and is then directed with a mirror onto the photodetector. The reference probe beam is also reflected from a mirror through an optical attenuator and onto a separate photodetector. To achieve comparable power from the two probe beams we used a translation stage holding the variable attenuator to reduce the intensity of the reference beam. This was done visually with the aid of the oscilloscope  displaying the two channels of the photodetectors. 
+We designed the experimental setup on the optical table to accommodate both Doppler-Free Saturated Absorption Spectroscopy and the Michelson Interferometer for calibration.  Using the infrared camera and the hand held card viewer allowed us to trace the paths of laser beam. The laser was directed through a cube beam splitter with one path continuing towards the Michelson Interferometer setup, and the other towards a thick beam splitter. The thickness of the beam splitter allows for spatially separated but parallel beams directly through the Rubidium vapor sample. These two weak beams are called the reference probe beam and the overlapping probe beam. The main portion of the laser continued straight through the thick beam splitter, becoming the start of the pump beam. The strong pump beam was angled with a mirror towards the opposite end of the table and was then angled with a separate mirror to overlap a probe beam. These two beams are propagating in opposite directions. The overlapping probe beam continues through the rubidium vapor sample and is then directed with a mirror onto the photodetector. The reference probe beam is also reflected from a mirror through an optical attenuator and onto a separate photodetector. To achieve comparable power from the two probe beams we used a translation stage holding the variable attenuator to reduce the intensity of the reference beam. This was done visually with the aid of the oscilloscope  displaying the two channels of the photodetectors. 
 
 The beam passing through the first beam splitter is incorporated into the Michelson Interferometer.  This interferometer consists of a thin microscope slide at $\approx45^{\circ}$ to act as a 50-50 beam splitter. The longer reflected leg of the Michelson Interferometer has a measured length of 388.5 $\pm $0.5 mm, while the shorter leg is measured to have a length of 94.5 $\pm $0.5mm. The laser traveled down and back each leg of the Michelson Interferometer and recombined at the beam splitter before continuing to the photodetector.  We ensured the beams were parallel and occupying the same space by using a card to ensure there was no divergence from the recombination point to the far wall approximately 3 meters away. After orienting the mirrors, beam splitters and photodetectors we noticed an odd feedback signal superimposed on both probe signals on our oscilloscope. After discussing the feedback with Professor Jun Ye, we were able to determine the feedback was a result of the interferometer beams entering into the spectroscopy component of the table. To negate these effects we installed another variable optical attenuator at an angle between the cube splitter and microscope slide to prevent the interferometer signal from entering the spectroscopy setup.  This eliminated the anomalous addition from the probe beam signals.  Using the Math function of the oscilloscope we were able to subtract the Doppler-broadened spectral lines with hyperfine structure (overlapping probe) from the Doppler-broadened spectral lines (reference probe) we were able to display just the specific peaks of the hyperfine structure. See figure \ref{fig:Layout} for a picture of our optical table.
 
@@ -207,13 +211,13 @@ The beam passing through the first beam splitter is incorporated into the Michel
 
 Toggling the Vortex Laser controls for the voltage and the wave-function generator's frequency and peak-to-peak ramp voltage allowed for panning left and right and zooming in and out on specific portions, focusing on the hyperfine splitting of the 5$^2P_{3/2} $ states.  We decided to arrange the output from the Michelson Interferometer to be displayed along side the three other signals, allowing for a direct comparison. These signals included the reference probe beam, the pump-overlapped probe beam, the interferometer signal and the ramp voltage signal upon which the oscilloscope is triggered.  By incorporating all of the signals onto the same oscilloscope we were able to directly compare all signals.
 
-This allowed us to measure the full width at half maximum (FWHM) of the doppler broadened lines of both isotopes as well as the separation of the hyperfine states for the D$_2$ lines of both isotopes. We then were able to solve for the constants A and B of the 5$^2 P_{3/2}$.
+This allowed us to measure the full width at half maximum (FWHM) of the Doppler broadened lines of both isotopes as well as the separation of the hyperfine states for the D$_2$ lines of both isotopes. We then were able to solve for the constants A and B of the 5$^2 P_{3/2}$.
 
 A critical feature of our setup was the careful alignment of the pump beam.  By ensuring the maximum overlap of the pump beam with one of the probe beams, we maximized the population in the higher ground states as well as the population of atoms interacting simultaneously with both pump and probe beams.  This optimizes the amount of stimulated hyperfine transitions that occur, making our signals much clearer.
 
-\subsection*{Results}
+\subsection*{Results and Discussion}
 
-Two representative sets of data for the D$_2$ transitions for both ${}^{85}\text{Rb}$ and ${}^{87}\text{Rb}$ are shown in figure \ref{fig:RbOsc}.
+Two representative sets of data for the D$_2$ transitions for both ${}^{85}\text{Rb}$ and ${}^{87}\text{Rb}$ are shown in figure \ref{fig:RbOsc}.  As can be seen from figure \ref{fig:RbOsc}, we were able to isolate 4 of the 6 ${}^{85}\text{Rb}$ D$_2$ hyperfine transitions (3 transitions, 3 crossovers), but all 6 D$_2$ transitions for ${}^{87}\text{Rb}$. 
 
 \begin{figure}%
 	\centering
@@ -224,27 +228,183 @@ Two representative sets of data for the D$_2$ transitions for both ${}^{85}\text
 	\label{fig:RbOsc}%
 \end{figure}
 
-As can be seen from figure \ref{fig:RbOsc}, we were able to isolate 4 of the 6 D$_2$ hyperfine transitions (3 transitions, 3 crossovers) for ${}^{85}\text{Rb}$, but all 6 D$_2$ transitions for ${}^{87}\text{Rb}$.
-
-We first obtain our `meterstick' for measuring frequency spacings.  To do this, we curve fit the interferometer signal to a cosine, and obtain a fitted period, $\delta t$.  We then compare spacings relative to this `meterstick' by observing that the ratio of the frequency spacing we desire, $f$ to the interferometer frequency spacing $\Delta \nu$ must equal the ratio of the time-spacing between the signals of interest $\tau$ to the time spacing of the interferometer period $\Delta t$:
+We first obtain our `meterstick' for measuring frequency spacings.  To do this, we curve fit the interferometer signal to a cosine, and obtain a fitted period, $\Delta t$.  We then compare spacings relative to this `meterstick' by observing that the ratio of the frequency spacing we desire, $f$ to the interferometer frequency spacing $\Delta \nu$ must equal the ratio of the time-spacing between the signals of interest $\tau$ to the time spacing of the interferometer period $\Delta t$:
 $$ \frac{f}{\Delta \nu}= \frac{\tau}{\Delta t}$$
 By using equation \ref{eq:interferometer}, we obtain:
 \begin{align}
 	f &= \frac{c}{2\Delta L \Delta t}\tau \label{eq:meterstick}
 \end{align}
 
-By performing the curve fitting mentioned above, we find 
+By performing the curve fitting mentioned above, we find a `meterstick' time of $\Delta t_{85} = 7.7884\pm 0.0004$ ms for ${}^{85}\text{Rb}$, and $\Delta t_{87} = 7.325\pm 0.001$ ms for ${}^{87}\text{Rb}$.  Given the lengths of the interferometer, we use $\Delta L = 0.2940$ m.
 
-We would like to measure the FWHM of the Doppler broadened D$_2$ transition.  We do this by fitting the Doppler broadened probe signals to Gaussians, and then using the relation $FWHM = 2 \sqrt{2 \ln(2)}\sigma$, where $\sigma$ is the standard deviation of the fitted Gaussian.
+\begin{figure}%
+	\centering
+	\subfloat[${}^{85}\text{Rb}$]{{\includegraphics[width=8cm]{../Screenshots/85Rb_fringe.png} }}%
+	\,
+	\subfloat[${}^{87}\text{Rb}$]{{\includegraphics[width=8cm]{../Screenshots/87Rb_fringe.png} }}%
+	\caption{Interferometric `Metersticks'}%
+	\label{fig:meterstick}%
+\end{figure}
+
+The data and fitting functions are shown in figure \ref{fig:meterstick}.  We attribute the difference in precision to the presence of more consistent nature of the ${}^{85}\text{Rb}$ signal.  Additionally, there is a time dependent component of the DC offset of the interferometer signal.  We did not have the time to further explore the nature of this signal, but we must remain cautious of results we obtain based on this signal.  The number of fringes are limited by the length difference in the interferometer arms, per equation \ref{eq:interferometer}.  We use these numbers in equation \ref{eq:meterstick} to obtain the following results.
+
+\subsubsection*{FWHM of Doppler broadened D$_2$ lines}
+
+We would like to measure the FWHM of the Doppler broadened D$_2$ transition.  We do this by fitting the Doppler broadened probe signals to Gaussians, and then using the relation $FWHM = 2 \sqrt{2 \ln(2)}\sigma$, where $\sigma$ is the standard deviation of the fitted Gaussian.  The data and the fitted function are shown in figure \ref{fig:FWHM}.
+
+\begin{figure}%
+	\centering
+	\subfloat[${}^{85}\text{Rb}$]{{\includegraphics[width=8cm]{../Screenshots/85RbFWHM.png} }}%
+	\,
+	\subfloat[${}^{87}\text{Rb}$]{{\includegraphics[width=8cm]{../Screenshots/87RbFWHM.png} }}%
+	\caption{Full Width at Half Maximum fitting of Doppler Broadened D$_2$ lines}%
+	\label{fig:FWHM}%
+\end{figure}
+
+These fittings produce the following results:  For ${}^{85}\text{Rb}$, we get a FWHM frequency range of $512.8\pm0.2$ MHz.  This agrees quite well with the predicted value of $511$ MHz in equation \ref{pred:85D2}.  For ${}^{87}\text{Rb}$, we find $506\pm1$ MHz, again agreeing with the predicted $505$ MHz in equation \ref{pred:87D2}.  However, we must acknowledge the sensitivity of these figures to the fitting of the Gaussian to the data.  Here, we eyeballed the data window for which to determine our fitting function.  There are additional signals in the windows that came from other transitions that we did not wish to include in the fitting, and thus we felt justified in excluding this data from the fitting.
+
+\subsubsection*{Hyperfine Line Splittings}
+
+We assume a Gaussian fit for the individual peaks for the individual hyperfine transitions.  We determined the locations of the peaks shown in figure \ref{fig:HyperfineOverview} by fitting the peaks, and again, attempting to judiciously choose which data to include in the fit, we obtained the center of each peak and used these data to obtain the following hyperfine splittings
+
+\begin{figure}%
+	\centering
+	\subfloat[${}^{85}\text{Rb}$]{{\includegraphics[width=8cm]{../Screenshots/85Rb_allpeaks.png} }}%
+	\,
+	\subfloat[${}^{87}\text{Rb}$]{{\includegraphics[width=8cm]{../Screenshots/87Rb_allpeaks.png} }}%
+	\caption{Overview of locations of hyperfine peaks}%
+	\label{fig:HyperfineOverview}%
+\end{figure}
+
+Individual fittings for the peaks of each D$_2$ line can be found in figures \ref{fig:85Hyperfine} and \ref{fig:87Hyperfine}.  We find the following splittings amongst the peaks discernible from the spectra, and compare them to the agreed upon values, from Steck\cite{steck85Rb}\cite{steck87Rb}:
+
+\begin{center}
+	\begin{tabular}{| L|c | L|c |L|c|}
+		\hline
+		{}^{85}Rb\textbf{ Splittings} & \textbf{Value (MHz)} & \textbf{Measured (MHz)}\\ 
+		\hline
+		\nu_{4}-\nu_{\bar{43}} & 60.3200 &  66.173\pm0.001\\ 
+		\hline
+		\nu_{\bar{43}}-\nu_{\bar{42}} & 31.7005 & 28.36\pm0.02\\ 
+		\hline
+		\nu_{\bar{42}}-\nu_{3} & 28.6195 & 51.48\pm0.07\\ 
+		\hline
+		\nu_{3}-\nu_{\bar{32}} & 31.7005 & \\ 
+		\hline
+		\nu_{\bar{32}}-\nu_2 & 31.7005 & \\
+		\hline
+	\end{tabular}
+\end{center}
+	\vspace{5mm}
+\begin{center}
+	\begin{tabular}{| L|c | L|c |L|c|}
+		\hline
+		{}^{87}Rb\textbf{ Splittings} & \textbf{Value (MHz)} & \textbf{Measured (MHz)} \\ 
+		\hline
+		\nu_{3}-\nu_{\bar{32}} & 133.3250 &130.82\pm0.03\\ 
+		\hline
+		\nu_{\bar{32}}-\nu_{\bar{31}} & 78.4735 & 73.79\pm0.03\\ 
+		\hline
+		\nu_{\bar{31}}-\nu_{2} & 54.8515 & 48.29\pm0.02\\ 
+		\hline
+		\nu_{2}-\nu_{\bar{21}} & 78.4735 & 93.42\pm0.05\\ 
+		\hline
+		\nu_{\bar{21}}-\nu_1 & 78.4735 & 81.68\pm0.07\\
+		\hline
+	\end{tabular}
+\end{center}
+
+The most notable discrepancy are the missing splittings from the ${}^{85}$Rb D$_2$ line.  However, we noticed that the expected spacings in ${}^{85}$Rb D$_2$ are less than half of those of ${}^{87}$Rb D$_2$.  We thus attribute the absence of lines to the close proximity they are in, requiring a greater resolution to discern individual peaks.  We argue that the peaks are present, but lost amongst each other owing to the amplitude and width of adjacent peaks.
+
+Additionally, we wish to point out that the most prominent peaks in the spectra of both isotopes correspond to the crossover frequencies, as predicted by theory.
 
 
+\begin{figure}[ht!]
+	\begin{center}
+		%
+		\subfloat[Peak 1]{%
+			\includegraphics[width=8cm]{../Screenshots/85Rb_peak1.png}
+		}%
+		\subfloat[Peak 2]{%
+			\includegraphics[width=8cm]{../Screenshots/85Rb_peak2.png}
+		}\\ %  ------- End of the first row ----------------------%
+		\subfloat[Peak 3]{%
+			\includegraphics[width=8cm]{../Screenshots/85Rb_peak3.png}
+		}%
+		\subfloat[Peak 4]{%
+			\includegraphics[width=8cm]{../Screenshots/85Rb_peak4.png}
+		}%
+		%
+	\end{center}
+	\caption{%
+		Observed hyperfine peaks in ${}^{85}\text{Rb D}_2$
+	}%
+	\label{fig:85Hyperfine}
+\end{figure}
 
+\begin{figure}[ht!]
+	\begin{center}
+		%
+		\subfloat[Peak 1]{%
+			\includegraphics[width=6cm]{../Screenshots/87Rb_peak1.png}
+		}%
+		\subfloat[Peak 2]{%
+			\includegraphics[width=6cm]{../Screenshots/87Rb_peak2.png}
+		}\\ %  ------- End of the first row ----------------------%
+		\subfloat[Peak 3]{%
+			\includegraphics[width=6cm]{../Screenshots/87Rb_peak3.png}
+		}%
+		\subfloat[Peak 4]{%
+			\includegraphics[width=6cm]{../Screenshots/87Rb_peak4.png}
+		}\\%
+		\subfloat[Peak 5]{%
+			\includegraphics[width=6cm]{../Screenshots/87Rb_peak5.png}
+		}%
+		\subfloat[Peak 6]{%
+			\includegraphics[width=6cm]{../Screenshots/87Rb_peak6.png}
+		}%
+		%
+	\end{center}
+	\caption{%
+		Observed hyperfine peaks in ${}^{87}\text{Rb D}_2$
+	}%
+	\label{fig:87Hyperfine}
+\end{figure}
 
-\subsection*{Error Analysis}
+Finally, we used numerical solvers in Python to find solutions for all combinations of the splitting equations \ref{eq:87splittings}.  We do not have sufficient data to test the splittings for $^{85}$Rb, but by we place the measured splitting lines alongside our guesses, based on the amplitude of the peaks to determine which peaks are crossovers.  Since each equation in \ref{eq:85splittings} and \ref{eq:87splittings} is an unknown in two variables, we use every combination of 2 equations with their associated transitions to solve for A and B.  We then average over all the values to obtain the reported values.  We tested our program on data from Steck\cite{steck85Rb}\cite{steck87Rb}, and obtained results that agreed with agreed upon values.  We then used this program to obtain estimates for the values A and B.  Our results are displayed below.
+
+\begin{center}
+	\begin{tabular}{| L|c | L|c |L|c|}
+		\hline
+		\textbf{Parameter} & {}^{85}\textbf{ Rb Expected (MHz)} & {}^{85}\textbf{ Rb Measured (MHz)}\\ 
+		\hline
+		\text{A} & 25.0 &  24\pm3\\ 
+		\hline
+		\text{B} & 25.8 & 50\pm10\\ 
+		\hline
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{| L|c | L|c |L|c|}
+		\hline
+		\textbf{Parameter} & {}^{87}\textbf{ Rb Expected (MHz)} & {}^{87}\textbf{ Rb Measured (MHz)}\\ 
+		\hline
+		\text{A} & 84.7 &  86\pm5\\ 
+		\hline
+		\text{B} & 12.5 & 5\pm7\\ 
+		\hline
+	\end{tabular}
+\end{center}
+
 
 \section*{Conclusions}
 
+ Throughout this experiment we learned about the technique of Doppler-Free Saturated Absorption Spectroscopy and used it to delve into the atomic hyperfine structure of $^{85}$Rb and $^{87}$Rb. Through meticulous alignment of the mirrors we maximized the amount of overlap between the pump beam and the probe beams allowing for hyperfine structure to be resolved. The process allows for a fine tuning to the specific frequencies associated with certain transitions of states.
 
+Our results generally agree with what we expected from theory and values obtained from other experiments.  However, in several instances, our results did not have errors that overlapped with theoretical or established results.  While we properly propagated our error in calculations, we believe we did not properly measure or account for all error sources.  With additional time, we could track all sources of error and properly account for them, as well as ensure the results we obtained minimized this error.
+
+Future experiments would be well advised to increase the length difference between the arms of the interferometer. Doing so will increase the number of fringes per unit time, and allow for greater precision in obtaining frequency measurements.
 
 \bibliographystyle{unsrt}
 \bibliography{DFS_ref}
